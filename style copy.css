@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-arrows {
+    margin-bottom: 15px;
+}
+
+.arrow-btn {
+    background-color: #e0dbdb;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-header .highlight {
+    color: #f26522; /
+}
+
+.contact-header p {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.contact-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 350px;
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    background-color: #d1eeee; 
+    border: 1px solid #333;
+    padding: 12px;
+    font-size: 14px;
+    color: #000;
+    text-align: center; 
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    text-align: center;
+    padding-top: 60px; 
+}
+
+
+.submit-btn {
+    background-color: #f26522; 
+    color: white;
+    border: 1px solid #333;
+    border-radius: 20px; 
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d45113;
+}
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
